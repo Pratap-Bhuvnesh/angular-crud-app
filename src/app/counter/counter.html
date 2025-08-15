@@ -1,0 +1,8 @@
+<p>counter works!</p>
+<div class="text-center space-y-4">
+     <h2 #myBox [style.backgroundColor] = 'backgroundcolor' class="myBox text-xl font-semibold">Counter: {{ counter }}</h2>
+     <input type="number" [(ngModel)]="counter" class="border px-3 py-1 rounded w-full text-center" />
+     <button class="bg-blue-500 text-white px-4 py-2 rounded" (mouseover)="onHover()" (click)="increment()">+</button>
+     <button *ngIf="status" class="bg-red-500 text-white px-4 py-2 rounded" (click)="decrement()">-</button>
+     <p appHighlight>Hover over this text to see the effect.</p>
+</div>
